@@ -12,8 +12,8 @@ public class TestLoggerFile {
 		fh = new FileHandler("D://myLogger.log", true);
 		fh.setFormatter(new SimpleFormatter());
 		log.addHandler(fh);
-		log.warning("GGininder");
-		log.info("info message");
+		log.warning("log.warning");
+		log.info("log.info");
 
 	}
 
