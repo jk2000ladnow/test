@@ -27,7 +27,8 @@ public class XmlTransfer {
 			Student stu = new Student("Jason","ROC","02/08");
 			File xmlFile = new File("C:/Student.xml");
 			marshaller.marshal(stu, xmlFile);
-			System.out.println("ObjToXml  Done!");
+			marshaller.marshal(stu, System.out);
+			System.out.println();
 		} catch (JAXBException e) {
 			System.out.println("ObjToXml  error");
 			System.out.println(e.toString());

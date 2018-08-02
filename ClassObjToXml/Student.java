@@ -12,7 +12,6 @@ public class Student implements Serializable {
 	private String birthDate;
 	
 	public Student () {
-		
 	}
 	
 	public Student (String name, String country, String birthDate) {
