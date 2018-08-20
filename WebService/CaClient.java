@@ -13,11 +13,12 @@ import com.jason.ws.client.date.SystemDateService;
 public class CaClient {
 	public static void main(String[] args) {
 		CallServiceByPort();
-		CallServiceByPortDate();
+		//CallServiceByPortDate();
 	}
 	
+	//1. 使用產生的service
 	public static void CallServiceByPort () {
-		System.out.println("test begin...");
+		System.out.println("test Cal begin...");
 		Cal cal = new CalService().getCalPort();
 		System.out.println(cal.show());
 		System.out.println(cal.add(2, 3));
@@ -30,6 +31,7 @@ public class CaClient {
 		System.out.println(date.showNewDate());
 	}
 	
+	//2. 直接呼叫
 	public static void CallByEndPoint () {
 		try {
 			String endpoint = "http://localhost:1234/cal?wsdl";
